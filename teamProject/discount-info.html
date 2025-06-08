@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>Discount Information</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #004d40, #87e5d5); 
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .intro {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0f2f1;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .discounts-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .discount-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 20px;
+        }
+        .discount-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .discount-card h3 {
+            color: #00796b;
+            margin: 0 0 10px;
+        }
+        .discount-card p {
+            margin: 5px 0;
+        }
+        .discount-card .actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 15px;
+        }
+        .discount-card .actions .btn {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .discount-card .actions .btn:hover {
+            background-color: #005f56;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💸 Discount Information 💸</h1>
+    </header>
+    <section class="intro">
+        <p>한양대학교 에리카 캠퍼스 주변에서 만날 수 있는 최신 할인과 프로모션 정보를 확인해 보세요! <br>
+            놓치면 아쉬운 특별한 혜택들을 지금 바로 만나보세요!</p>
+    </section>
+    <div class="discounts-container">
+        <div class="discount-card">
+            <h3>육회바른 연어 - 10% 할인</h3>
+            <p><strong>기간 |</strong> 2024.12.15 - 2024.12.31</p>
+            <p><strong>내용 |</strong> 모든 식사 메뉴에 대해 10% 할인 제공!</p>
+            <div class="actions">
+                <button class="btn"><i class="fa-solid fa-share"></i> Share</button>
+            </div>
+        </div>
+        <div class="discount-card">
+            <h3>시라이도네르 케밥 - 1+1 이벤트</h3>
+            <p><strong>기간 |</strong> 2024.12.20 - 2025.01.10</p>
+            <p><strong>내용 |</strong> 케밥 플레이트 구매 시 동일 메뉴 1개 무료!</p>
+            <div class="actions">
+                <button class="btn"><i class="fa-solid fa-share"></i> Share</button>
+            </div>
+        </div>
+        <div class="discount-card">
+            <h3>남월 - 무료 음료 제공</h3>
+            <p><strong>기간 |</strong> 2024.12.18 - 2025.01.05</p>
+            <p><strong>내용 |</strong> 쌀국수 주문 시 음료 1개 무료 증정!</p>
+            <div class="actions">
+                <button class="btn"><i class="fa-solid fa-share"></i> Share</button>
+            </div>
+        </div>
+        <div class="discount-card">
+            <h3>비스트로 라베이 - 런치 세트 할인</h3>
+            <p><strong>기간 |</strong> 2024.12.25 - 2025.01.15</p>
+            <p><strong>내용 |</strong> 런치 세트 20% 할인 이벤트 진행 중!</p>
+            <div class="actions">
+                <button class="btn"><i class="fa-solid fa-share"></i> Share</button>
+            </div>
+        </div>
+        <div class="discount-card">
+            <h3>고기마을 - 삼겹살 2인 세트 할인</h3>
+            <p><strong>기간 |</strong> 2024.12.22 - 2025.01.12</p>
+            <p><strong>내용 |</strong> 삼겹살 2인 세트 주문 시 5,000원 할인!</p>
+            <div class="actions">
+                <button class="btn"><i class="fa-solid fa-share"></i> Share</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

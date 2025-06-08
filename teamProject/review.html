@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>Student Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #004494, #80c3e2); 
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .intro {
+            text-align: center;
+            padding: 20px;
+            background-color: #e3f2fd;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .reviews-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .review-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .review-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .review-card .content {
+            padding: 20px;
+            text-align: left;
+        }
+        .review-card h2 {
+            color: #0056b3;
+            margin: 0 0 10px;
+        }
+        .review-card p {
+            margin: 5px 0;
+        }
+        .review-card .stars {
+            margin: 10px auto;
+            color: #FFD700;
+            font-size: 25px;
+        }
+        .review-card .metadata {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .review-card .actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .review-card .actions .btn {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .review-card .actions .btn:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 Student Reviews 📚</h1>
+    </header>
+    <section class="intro">
+        <p>한양대학교 주변 맛집에 대한 학생들의 생생한 리뷰를 탐험해 보세요. <br>
+            진짜 경험, 진짜 맛, 그리고 진짜 이야기가 여러분을 기다리고 있습니다!</p>
+    </section>
+    <div class="reviews-container">
+        <div class="review-card">
+            <img src="img/salmon.jpg" alt="육회바른 연어">
+            <div class="content">
+                <h2>육회바른 연어</h2>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p><strong>작성자 |</strong> Jane Doe</p>
+                <p><strong>게시일 |</strong> 2024.12.10</p>
+                <p>"신선한 연어와 부드러운 맛이 정말 좋았어요. 학생들에게 꼭 추천하고 싶은 장소입니다!"</p>
+                <div class="actions">
+                    <button class="btn"><i class="fa-solid fa-heart"></i> Like</button>
+                </div>
+            </div>
+        </div>
+        <div class="review-card">
+            <img src="img/kebab.jpeg" alt="시라이도네르 케밥">
+            <div class="content">
+                <h2>시라이도네르 케밥</h2>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <p><strong>작성자 |</strong> John Smith</p>
+                <p><strong>게시일 |</strong> 2024.12.09</p>                <p>"케밥도 맛있고 서비스도 친절했어요. 빠르고 맛있는 식사를 원할 때 딱이에요!"</p>
+                <div class="actions">
+                    <button class="btn"><i class="fa-solid fa-heart"></i> Like</button>
+                </div>
+            </div>
+        </div>
+        <div class="review-card">
+            <img src="img/riceNoodle.jpeg" alt="남월">
+            <div class="content">
+                <h2>남월</h2>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <p><strong>작성자 |</strong> Alice Lee</p>
+                <p><strong>게시일 |</strong> 2024.12.08</p>
+                <p>"진한 국물과 푸짐한 양이 정말 마음에 들었어요. 추운 날에 딱이에요!"</p>
+                <div class="actions">
+                    <button class="btn"><i class="fa-solid fa-heart"></i> Like</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

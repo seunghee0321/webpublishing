@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+li {
+    list-style: none;
+}
+.header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+.date{
+    font-size: 12px;
+    color: #999;
+}
+
+.top{
+    /*검색창 오른쪽으로 배치*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.top .logo{
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+.gnb-menu {
+    display: flex; /*세로로 되었는 메뉴들을 가로로 배치*/
+    font-family: 'Poppins', sans-serif;
+}
+.gnb-menu li {
+    flex-grow: 1; /*나머지 공간 채우기*/
+    background-color: skyblue;
+    position: relative;
+}
+.gnb-menu > li:hover {
+    background: blue;
+}
+.gnb-menu li  a {
+    display: block;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #404040;
+    text-decoration: none; /*text 밑줄 없애기*/
+}
+.gnb-menu li span {
+    font-size: 13px;
+}
+.gnb-menu li a:hover /*a 태그에 마우스를 올렸을 때*/ {
+    color: #fff;
+}
+.gnb-menu > li > ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 0;
+}
+.gnb-menu > li > ul > li {
+    padding: 10px 10px 10px 10px;
+    background: none;
+    align-items:inherit;
+    border-bottom: 1px solid black;
+}
+.gnb-menu > li > ul > li > a{
+    font-size: 18px;
+    padding: 10px;
+    color: #000;
+}
+.gnb-menu > li:hover > ul{
+    display: block;
+    z-index: 10;
+}
+.gnb-menu > li > ul > li > a:hover{
+    color: red;
+}
+
+
+
+
+/*Search*/
+.search-form {
+    display: flex;
+    margin-right: 4rem;
+}
+.search-form input /*search, summit 공통 부분*/ {
+    height: 50px;
+    border: 0; /*테두리 없애기*/
+    font-size: 1.1rem;
+}
+.search-form input[type="search"] {
+    flex-grow: 1; /*검색창 부분만 화면에 꽉 채우기(flex:1;도 가능)*/
+    background: #fff;
+    padding: 1em;
+    border-radius: 5px 0 0 5px; /*사각형 둥글게 만들기(시계방향으로 사각형 꼭짓점 배정)*/
+}
+.search-form input[type="submit"] {
+    width: 100px;
+    background: skyblue;
+    font-size: 1rem;
+    border-radius: 0 5px 5px 0;
+    text-indent: -999999px;
+    font-size: 0;
+    background: skyblue url(../img/svg/magnifying-glass-solid.svg) no-repeat center/50% 50%;
+    cursor: pointer;
+}
+.search-form input[type="submit"]:hover{
+    background-color: blue;
+} 
+
+main {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("../img/bg-0.jpg") center center;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+main button.upload-button{
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius:  20px;
+    padding: 1rem 2rem;
+    margin-top: 6rem;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .container{
+    padding-top: 100px;
+}
+main h2 {
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    letter-spacing: 3px;
+    font-family: 'Bree Serif', serif;
+}
+main p {
+    max-width: 500px;
+    margin:  0 auto;
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+main h2 span::after {
+    content: "";
+    height: 40px;
+    width: 3px;
+    background-color: #fff;
+    display: inline-block;
+    animation: blink 0.7s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+section {
+    font-family: 'Varela Round', sans-serif;
+    padding: 2rem 0;
+}
+section .title{
+    margin-bottom: 3rem;
+}
+section .title h4{
+    font-size: 1.35rem;
+    color: #ed4848;
+    position: relative;
+}
+section .title h2{
+    font-size: 3.5rem;
+}
+section .title p{
+    font-size: 1.15rem;
+}
+
+.card-list{
+    margin-bottom: 0;
+}
+.card-item{
+    /*게시물 배치*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.card-photo {
+    /*이미지*/
+    padding: 25% 0; /*고정된 이미지 설정(브라우저 크기에 상관없이)*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: red;
+    background-size: cover;
+    border: 0.5px solid #ccc;
+    border-radius: 20px 20px 0  0;
+}
+.card-btm{
+    /*제목과 상세 내용*/
+    padding: 1.5em;
+    background: #fff;
+    flex-grow: 1; /*이미지 높이 같게 하기*/
+    border: 0.5px solid #ccc;
+    border-radius: 0 0 20px 20px;
+}
+.card-btm p {
+    /*날짜와 더보기 버튼 배치*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-desc{
+    margin-bottom: 1rem;
+     /*여러줄...처리*/
+     display: -webkit-box;
+     overflow: hidden;
+     height: 45px; /*2줄 반 정도로 나타날 시 2줄만 나타나게끔 height 조절*/
+     -webkit-line-clamp: 2; /*몇 줄을 나타내고 ...처리할 것인지 -> 2줄로 처리함*/
+     -webkit-box-orient: vertical;
+}
+.card-btm h3{
+    margin-bottom: 0.5rem;
+}
+.card-btm h3 a{
+    color: #333;
+}
+.card-btm h3 a:hover{
+    text-decoration: none;/*Title 마우스 호버 시 라인 안보이게 하기*/
+    color: blue;
+}
+
+.btn-more{
+    padding: 0.5rem 1rem;
+    border: 1px solid #999;
+    font-size: 14px;
+    border-radius: 15px;
+}
+.btn-more i{
+    color: blue;
+    margin-right: 6px;
+}
+
+section .top3::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section .top3 .inner{
+    width:30%;
+    height: 309px;
+    padding:5rem; 
+    float:left;
+    margin-right:5%;
+    cursor:pointer;
+}
+section .top3 .inner:nth-child(1){
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("../img/img-07.jpg") center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section .top3 .inner:nth-child(2){
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("../img/img-08.jpg") center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section .top3 .inner:nth-child(3){
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("../img/img-09.jpg") center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+section .top3 .inner:last-child{
+    margin-right:0;
+}
+section .top3 .inner .icon i{
+    font-size:2.5rem;
+    color:white;
+}
+section .top3 .inner{
+    color: white;
+}
+section .top3 .inner .content h3{
+    font-size:2rem;
+    margin:1rem 0;
+}
+
+section .top3 .inner:hover {
+    /*게시물 호버 시 확대*/
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.class .container{
+    height: 600px;
+}
+
+.thumb-list.row-line2 li{
+    display: flex;
+    margin-bottom: 1.5em;
+    align-items: center;
+}
+
+.thumb-list.row-line2 .desc a{
+    text-decoration: none;
+    color: #333;
+}
+.thumb-list li:nth-child(3) .desc{
+    border-bottom: none;
+}
+.thumb-list li .desc{
+    font-size: 30px;
+}
+.thumb-photo{
+    /*image 보이게 하기*/
+    width: 160px;
+    height:120px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: red;
+    background-size: 180%;
+    margin-right: 10px;
+    flex-shrink: 0; /*찌그러진 이미지 나타내기*/
+    margin-right: 1.5rem;
+}
+.thumb-title{
+    border-bottom: 1px solid #ccc;
+    padding: 1.2rem 0;
+}
+.thumb-list.row-line2 p{
+    float: right;
+}
+
+.contents{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+.info{
+    float: left;
+    width: 600px;
+    height: 100%;
+}
+.profile{
+    float: right;
+    width: 600px;
+    height: 100%;
+    margin-top: 5px;
+}
+.profile ul{
+    padding: 0;
+    overflow: hidden;
+}
+.profile ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.profile ul li a span{
+    display: block;
+    margin: 15px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    line-height: 150px;
+}
+#quick-icon-1{
+    background: url('../img/person-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#quick-icon-2{
+    background-image: url('../img/person-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#quick-icon-3{
+    background-image: url('../img/person-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#quick-icon-4{
+    background-image: url('../img/person-4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#quick-icon-5{
+    background-image: url('../img/person-5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#quick-icon-6{
+    background-image: url('../img/person-6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile ul li a p{
+    margin-top: 15px;
+    font-weight: 600;
+    color: #666;
+}
+.upload { 
+    width:90%;
+    margin-left:5%;
+    margin-bottom:2rem;
+    border:1px solid #ccc;
+    padding:1rem;
+    border-radius: 10px;
+  }
+.upload .form-group{
+    margin-bottom:1.25rem;
+    font-size: 20px;
+  }
+.upload.form-group label{
+    display:block;
+    margin-bottom:0.85rem;
+}
+ .upload .form-group input{
+    padding:0.625rem;
+    width:100%;
+    outline:none;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin-top: 10px;
+  }
+.upload .form-group input:focus{
+    border:1px solid #719ECE;
+    box-shadow:0 0 10px #719ECE;
+  }
+  .upload .form-group textarea{
+    margin-top: 10px;
+  }
+.upload .form-group .how{
+    height:250px;
+    width:100%;
+    resize:none;
+    border:1px solid #ccc;
+    border-radius:10px;
+  }
+  .upload .form-group .tip{
+    height:100px;
+    width:100%;
+    resize:none;
+    border:1px solid #ccc;
+    border-radius:10px;
+  }
+.upload .form-group textarea:focus{
+    outline:none;
+    border:1px solid #719ECE;
+    box-shadow:0 0 10px #719ECE;
+  }
+  
+  .filetype {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+   
+  }
+  
+  .filetype * {
+    vertical-align: middle;
+  }
+  
+  .filetype .file-text {
+    position: relative;
+    width: 500px;
+    /*한줄 처리*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    height: 30px;
+    background-color: #ecefef;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: 1px solid #cdd3d4;
+    line-height: 20px;
+    z-index: 10;
+}
+  
+  .filetype .file-select {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    overflow: hidden;
+  }
+
+  .filetype .file-select .input-file {
+    width: 80px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    height: 20px;
+  }
+  
+  .filetype .file-text + .file-btn {
+    display: inline-block;
+    background-color: #cdd3d4;
+    height: 30px;
+    line-height: 22px;
+    padding: 5px;
+    color: #000 !important;
+    cursor: pointer;
+   
+  }
+  .file-text{
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  .filetype .file-btn{
+    margin-top: 10px;
+  }
+
+.upload button{
+    width:100%;
+    padding:1rem;
+    background-color:skyblue;
+    border:none;
+    color:white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+/*전체화면에서 게시물 3개씩 설정*/
+  @media all and (min-width:600px){
+    .card-list-wrap{
+        overflow-x: hidden; /*좌우 스크롤 없애기*/
+    }
+    .card-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+    .card-item{
+        width: 50%;
+        padding: 0 1rem; /*이미지 사이사이 벌어지게*/
+    } 
+}
+@media all and (min-width:1200px){
+    .card-item{
+        width: 33.333333%;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    border-top:2px solid #222;
+}
+#bottomMenu{
+    width:100%;
+    height:20px;
+    position:relative;  
+  }
+  #bottomMenu ul {
+    margin-top:15px;  
+  }
+  #bottomMenu ul li{
+    float:left; 
+    padding:5px 20px;
+    border-right:1px solid #ddd; 
+  }
+  #bottomMenu ul li:last-child{
+    border:none; 
+  }
+  #bottomMenu ul li a, #bottomMenu ul li a:visited {  
+    font-size:15px;
+    color:#666; 
+  }
+  #school-logo {
+    position:absolute;  
+    right:0; 
+    border:none;
+    padding:20px; 
+  }
+  #school-logo img{
+    height: 50px;
+    width: 150px;
+    margin-right: 0.2rem;
+    margin-right: 20px;
+  }
+  #company{
+    clear:left;
+    margin-top:30px;
+    margin-left:20px;
+  }
+  p {
+    font-size:14px;
+    color:#aaa;
+  }
+
+  .btn-more:hover{
+    cursor: pointer;
+  }
+  .upload-button:hover{
+    background-color: black;
+    color: white;
+    border: black;
+  }

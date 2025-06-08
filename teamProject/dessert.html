@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #e3f2fd; 
+        }
+        header {
+            background: linear-gradient(90deg, #004494, #80c3e2); 
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding: 40px;
+        }
+        .restaurant {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            max-width: 400px;
+            flex: 1 1 calc(33% - 40px);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .restaurant:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .restaurant img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .restaurant h2 {
+            color: #0288d1; 
+            font-size: 1.5rem;
+            margin: 20px 0 10px;
+            text-transform: uppercase;
+        }
+        .restaurant p {
+            margin: 5px 0;
+            color: #37474f; 
+        }
+        .restaurant p strong {
+            font-weight: bold;
+        }
+        .restaurant .content {
+            padding: 20px;
+            background-color: #b3e5fc; 
+        }
+        .restaurant .stars {
+            color: #0288d1;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍰 Dessert 🍰</h1>
+    </header>
+    <div class="container">
+        <div class="restaurant">
+            <img src="img/donut.jpeg" alt="신디도넛 사진">
+            <div class="content">
+                <h2>신디도넛</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 성안1길 16 윤준빌딩</p>
+                <p><strong>대표 메뉴 |</strong> 얼그레이레몬 도넛</p>
+                <p><strong>추천 이유 |</strong> 달콤하고 부드러운 도넛과 다양한 맛으로 입맛을 사로잡는 도넛카페입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/cake.jpeg" alt="딸기케이크 사진">
+            <div class="content">
+                <h2>카페 마루</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 학사2길 11-3 1층</p>
+                <p><strong>대표 메뉴 |</strong> 딸기 케이크</p>
+                <p><strong>추천 이유 |</strong> 싱글생글한 맛이 가득한 케이크로 달콤한 행복을 느낄 수 있는 케이크 카페입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/financier.jpeg" alt="휘낭시에 사진">
+            <div class="content">
+                <h2>휘쿠버</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 성안1길 18 1층</p>
+                <p><strong>대표 메뉴 |</strong> 솔티드 카라멜 휘낭시에</p>
+                <p><strong>추천 이유 |</strong> 쫀쫀하며 부드러운 식감과 버터향이 일품인 휘낭시에가 인기 있는 카페입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/proscons.jpeg" alt="프로스콘스 사진">
+            <div class="content">
+                <h2>프로스콘스</h2>
+                <p><strong>주소:</strong> 경기 안산시 상록구 학사2길 12</p>
+                <p><strong>대표 메뉴 |</strong> 치아바타, 소금빵</p>
+                <p><strong>추천 이유 |</strong> 쫀쫀한 치아바타와 겉바속촉 소금빵이 주력 메뉴이며 지하와 1층, 2층을 함께 사용하는 대형 카페입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/cozy.jpeg" alt="코지홀리데이 사진">
+            <div class="content">
+                <h2>코지홀리데이</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 학사2길 2-1 1층</p>
+                <p><strong>대표 메뉴 |</strong> 얼그레이 갸또</p>
+                <p><strong>추천 이유 |</strong> 갸또, 크로플, 쿠키 등 다양한 구움과자를 깔끔하고 아늑한 분위기 속에서 즐길 수 있는 카페입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/hoosikgip.jpeg" alt="후식집 사진">
+            <div class="content">
+                <h2>후식집</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 한양대학로 20 1층</p>
+                <p><strong>대표 메뉴 |</strong> 다쿠아즈</p>
+                <p><strong>추천 이유 |</strong> 케이크, 마카롱, 다쿠아즈 등 다양한 디저트를 테이크아웃으로 편하게 즐길 수 있는 전문점입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/trybbothy.jpeg" alt="트라이뽀티 사진">
+            <div class="content">
+                <h2>트라이뽀티</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 학사4길 4</p>
+                <p><strong>대표 메뉴 |</strong> 밀크티</p>
+                <p><strong>추천 이유 |</strong> 진한 밀크티와 쫄깃한 버블이 어우러진 버블티를 전문으로 하는 버블티 전문점입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/bunnymoon.jpeg" alt="버니문 사진">
+            <div class="content">
+                <h2>버니문</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 학사2길 11-4 1층</p>
+                <p><strong>대표 메뉴 |</strong> 초코브라우니 케이크</p>
+                <p><strong>추천 이유 |</strong> 독특한 컨셉의 미니 망치로 직접 깨서 즐기는 과자가 올려진 케이크 카페입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/sunlight.jpeg" alt="썬라잇 사진">
+            <div class="content">
+                <h2>썬라잇</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 성안1길 38 1층</p>
+                <p><strong>대표 메뉴 |</strong> 쿠키, 푸딩</p>
+                <p><strong>추천 이유 |</strong> 따뜻한 쿠키와 부드러운 푸딩을 함께 즐길 수 있는 아늑한 카페입니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

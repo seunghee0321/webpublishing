@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcohol</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #e0f2f1; 
+        }
+        header {
+            background: linear-gradient(90deg, #004d40, #87e5d5); 
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding: 40px;
+        }
+        .restaurant {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            max-width: 400px;
+            flex: 1 1 calc(33% - 40px);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .restaurant:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .restaurant img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .restaurant h2 {
+            color: #00796b; 
+            font-size: 1.5rem;
+            margin: 20px 0 10px;
+            text-transform: uppercase;
+        }
+        .restaurant p {
+            margin: 5px 0;
+            color: #004d40; 
+        }
+        .restaurant p strong {
+            font-weight: bold;
+        }
+        .restaurant .content {
+            padding: 20px;
+            background-color: #b2dfdb; 
+        }
+        .restaurant .stars {
+            color: #00796b; 
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍻 Alcohol 🍻</h1>
+    </header>
+    <div class="container">
+        <div class="restaurant">
+            <img src="img/daldal.jpeg" alt="달달포차 사진">
+            <div class="content">
+                <h2>달달포차</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 학사2길 2-1 B01</p>
+                <p><strong>대표 메뉴 |</strong> 우삼겹 마라 전골</p>
+                <p><strong>추천 이유 |</strong> 우삼겹 마라 전골을 맛볼 수 있는 달달포차는 매운 마라 소스와 부드러운 우삼겹이 어우러져 깊은 맛이 일품인 전골로 안주들 모두 입맛을 끌어당기는 맛집입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/roadRock.jpeg" alt="로드락비어 사진">
+            <div class="content">
+                <h2>로드락비어</h2>
+                <p><strong>주소:</strong> 경기 안산시 상록구 성안길 78-3 104호, 105호</p>
+                <p><strong>대표 메뉴 |</strong> 통다리 순살</p>
+                <p><strong>추천 이유 |</strong> 바삭한 튀김과 시원한 맥주가 완벽한 조화를 이루어 맛과 힙한 분위기를 갖춘 모두를 만족시킬 수 있는 맛집입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/manchi.jpeg" alt="만취 사진">
+            <div class="content">
+                <h2>만취</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 한양대학로 36 사동 3863 2층</p>
+                <p><strong>대표 메뉴 |</strong> 바지락 술찜 파스타</p>
+                <p><strong>추천 이유 |</strong> 파스타와 오리구이 등 다양한 퓨전 다이닝 안주와 편안한 공간과 분위기를 제공하는 요리주점 만취입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/aplus.jpeg" alt="에이플러스 사진">
+            <div class="content">
+                <h2>에이플러스</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 성안길 78-4 더에리카 건물 3층</p>
+                <p><strong>대표 메뉴 |</strong> 순두부 삼겹 김치찜</p>
+                <p><strong>추천 이유 |</strong> 50가지 종류 이상의 주류 10가지 이상 음료와 30가지 이상 맛있는 안주를 갖춘 단체 예약모두 가능한 술집입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/uone.jpeg" alt="유원치킨 사진">
+            <div class="content">
+                <h2>유원치킨</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 성안길 78-3 사동 3759 라라캠퍼스</p>
+                <p><strong>대표 메뉴 |</strong> 후라이드 양념 순살</p>
+                <p><strong>추천 이유 |</strong> 10년 이상의 오랜 역사를 자랑하며 저렴한 가격과 푸짐한 양으로 학생들에게 꾸준한 사랑을 받아온 맛집입니다. </p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/twoleg.jpeg" alt="투다리 사진">
+            <div class="content">
+                <h2>투다리</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 학사2길 사동 3923-18 1층 </p>
+                <p><strong>대표 메뉴 |</strong> 김치우동</p>
+                <p><strong>추천 이유 |</strong> 매콤한 김치우동과 술과 잘 어울리는 꼬치 요리들이 일품이며 아늑한 분위기 속에서 편안하게 즐길 수 있는 술집입니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

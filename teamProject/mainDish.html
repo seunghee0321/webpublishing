@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Dish</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #FFF7E6; 
+        }
+        header {
+            background: linear-gradient(90deg, #F59E0B, #ffe282); 
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding: 40px;
+        }
+        .restaurant {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            max-width: 400px;
+            flex: 1 1 calc(33% - 40px);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .restaurant:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .restaurant img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .restaurant h2 {
+            color: #F59E0B; 
+            font-size: 1.5rem;
+            margin: 20px 0 10px;
+            text-transform: uppercase;
+        }
+        .restaurant p {
+            margin: 5px 0;
+            color: #4B3F28; 
+        }
+        .restaurant p strong {
+            font-weight: bold;
+        }
+        .restaurant .content {
+            padding: 20px;
+            background-color: #FDE68A; 
+        }
+        .restaurant .stars {
+            color: #F59E0B; 
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍽️ Main Dish 🍽️</h1>
+    </header>
+    <div class="container">
+        <div class="restaurant">
+            <img src="img/myunsikdang.jpeg" alt="면식당 사진">
+            <div class="content">
+                <h2>면식당</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 학사4길 2 1층</p>
+                <p><strong>대표 메뉴 |</strong> 라멘, 마제소바</p>
+                <p><strong>추천 이유 |</strong> 신선한 재료와 정성이 담긴 면 요리로, 각종 토핑과 소스가 어우러져 풍부한 맛을 경험할 수 있는 식당입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/cabare.jpeg" alt="카바레식당 사진">
+            <div class="content">
+                <h2>카바레 식당</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 한양대학로 66 사동 1562-7 1층</p>
+                <p><strong>대표 메뉴 |</strong> 브라운크림카레</p>
+                <p><strong>추천 이유 |</strong> 진한 국물과 다양한 재료가 어우러져 깊고 진한 맛을 자랑하는 카레를 맛볼 수 있습니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/heckbab.jpeg" alt="핵밥 사진">
+            <div class="content">
+                <h2>핵밥</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 한양대학로 49 사동 1149-3 1층</p>
+                <p><strong>대표 메뉴 |</strong> 큐브스테이크 덮밥</p>
+                <p><strong>추천 이유 |</strong> 풍성한 재료와 조화로운 맛이 어우러진 최고의 덮밥을 즐길 수 있습니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/pepperoni.jpeg" alt="페퍼로니버튼 사진">
+            <div class="content">
+                <h2>페퍼로니 버튼</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 성안길 82-3 1층</p>
+                <p><strong>대표 메뉴 |</strong> PB Favorite</p>
+                <p><strong>추천 이유 |</strong> 다양한 토핑과 풍미 가득한 크러스트로 모든 입맛을 만족시킵니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/vertex.jpeg" alt="버텍스 사진">
+            <div class="content">
+                <h2>버텍스</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 성안1길 19 1층</p>
+                <p><strong>대표 메뉴 |</strong> 미국식 닭고기 덮밥</p>
+                <p><strong>추천 이유 |</strong> 풍부한 맛의 미국식 닭고기 덮밥과 푸짐한 양으로 든든한 식사를 제공합니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/yangsikdang.jpeg" alt="양식당 사진">
+            <div class="content">
+                <h2>양식당</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 성안길 84-1 1층 14일</p>
+                <p><strong>대표 메뉴 |</strong> 바질크림파스타</p>
+                <p><strong>추천 이유 |</strong> 메뉴가 다양하고 깔끔하며 정성스럽게 준비한 양식을 맛볼 수 있는 식당입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/salmon.jpg" alt="육회바른 연어 사진">
+            <div class="content">
+                <h2>육회바른 연어</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 한양대학로 60 108, 109호</p>
+                <p><strong>대표 메뉴 |</strong> 육회덮밥, 육회연어초밥</p>
+                <p><strong>추천 이유 |</strong> 신선한 재료들로 만들며 가성비도 뛰어나 학생들에게 인기가 많습니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/kebab.jpeg" alt="케밥 사진">
+            <div class="content">
+                <h2>시라이도네르 케밥</h2>
+                <p><strong>주소 |</strong> 경기 안산시 상록구 한양대학로 45-1 사동 1149-5 1층</p>
+                <p><strong>대표 메뉴 |</strong> 케밥 플레이트</p>
+                <p><strong>추천 이유 |</strong> 가정통 터키식 케밥의 맛을 재현하며 넉넉한 양과 합리적인 가격이 특징입니다.</p>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="img/riceNoodle.jpeg" alt="쌀국수 사진">
+            <div class="content">
+                <h2>남월</h2>
+                <p><strong>주소 |</strong> 경기도 안산시 상록구 반월로 성안길 81 1568-12 789</p>
+                <p><strong>대표 메뉴 |</strong> 퍼보 쌀국수</p>
+                <p><strong>추천 이유 |</strong> 깊고 진한 국물 맛과 신선한 재료로 현지 느낌을 그대로 느낄 수 있습니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
