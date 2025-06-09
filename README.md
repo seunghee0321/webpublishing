@@ -6,7 +6,7 @@
 - CSS
 - JavaScript
 
-## 화면 주요 기능
+## 웹사이트 특징
 
 ### head
 - 카테고리별 분류: Main, Dessert, Alcohol 등으로 분류하여 정보를 제공
